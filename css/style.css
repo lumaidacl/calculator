@@ -1,8 +1,72 @@
 body{
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  background: #EAEBEC;
 }
-.align{
-  max-width: 75em;
+.main-title {
+  text-align: center;
+}
+.wrapper {
+  width: 400px;
+  margin: auto;
+}
+.calc-content {
+  width: 275px;
   margin: 0 auto;
+  min-height: 400px;
+  border: solid 1px #3A4659;
+}
+.calc-content__screen {
+  background-color: #3A4659;
+  padding: 20px;
+}
+.calc-content__operation {
+  text-align: right;
+  color: #727B86;
+  font-size: 21px;
+  padding-bottom: 10px;
+  border-bottom: dotted 1px;
+}
+.calc-content__typed {
+  margin: 20px 0 0 0;
+  font-size: 45px;
+  text-align: right;
+  color: #ffffff;
+}
+/* Operators and numbers*/
+.calc-content__row {
+  width: 100%;
+  background-color: #3A4659;
+}
+.calc-row {
+  width: 100%;
+  background: #3A4659;
+}
+.calc-row__button {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  width: 25%;
+  background: #425062;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+  border: solid 2px #3A4659;
+}
+.calc-row__button c {
+  color: #D95D4E;
+  background-color: #404D5E;
+}
+.calc-row__button o {
+  color: #AEB3BA;
+  background: #404D5E;
+}
+.calc-row__button:hover {
+  background: #00B1AF;
+}
+.calc-row__button.c:hover,
+.calc-row__button.o:hover {
+  background: #00B1AF;
+  color: #fff;
 }

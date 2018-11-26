@@ -21,7 +21,7 @@
   const addition = (numbers)=>{
     let result = 0;
     numbers.map( number => {
-      result +=  parseFloat(number);
+      result +=  +number;
     });
     return result;
   };
@@ -30,9 +30,9 @@
     let result = 0;
     numbers.map( (value, index) => {
       if(index===0){
-        result +=  parseFloat(value);
+        result +=  +value;
       }else{
-        result -= parseFloat(value);
+        result -= +value;
       }
     });
     return result;
@@ -42,9 +42,9 @@
     let result = 0;
     numbers.map( (value, index) => {
       if(index===0){
-        result +=  parseFloat(value);
+        result +=  +value;
       }else{
-        result *= parseFloat(value);
+        result *= +value;
       }
     });
     return result;
@@ -54,9 +54,9 @@
     let result = 0;
     numbers.map( (value, index) => {
       if(index===0){
-        result +=  parseFloat(value);
+        result +=  +value;
       }else{
-        result /= parseFloat(value);
+        result /= +value;
       }
     });
     return result;
@@ -64,7 +64,7 @@
 
   const compare = (numbers) =>{
     let result = 0;
-    if(parseFloat(numbers[0]) < parseFloat(numbers[1])){
+    if(+numbers[0] < +numbers[1]){
       result = 1;
     }
     return result;
@@ -72,14 +72,14 @@
 
   const distinctof = (numbers) =>{
     let result = 0;
-    if(parseFloat(numbers[0]) !== parseFloat(numbers[1])){
+    if(+numbers[0] !== +numbers[1]){
       result = 1;
     }
     return result;
   };
 
   const moduleof = (numbers) =>{
-    return parseFloat(numbers[0]) % parseFloat(numbers[1]);
+    return +numbers[0] % +numbers[1];
   };
 
   const getResult = (e)=>{
